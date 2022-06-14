@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./index.css";
+import "antd-mobile/dist/antd-mobile.css";
+import { BrowserRouter as Router, Link, Route, Routes, useNavigate } from "react-router-dom";
+import Home from "./pages/Home";
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/home/*"  element={<Home></Home>}></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
