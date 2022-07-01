@@ -6,6 +6,14 @@ npx create-react-app hkzf
 
 # 安装antd-mobile组件库
 yarn add antd-mobile
+版本`2.3.1`
 
 # 安装路由
 yarn add react-router-dom
+版本`v6`
+
+# 安装axios
+yarn add axios
+
+# 安卓sass .scss .sass 导入样式文件
+yarn add node-sass

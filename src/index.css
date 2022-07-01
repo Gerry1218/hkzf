@@ -1,6 +1,21 @@
-
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei';
+  color: #333;
+  background-color: #fff;
+}
 
 
 #tab-bar .am-tab-bar {
   background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+  /* touch-action:pan-y; */
+}
+
+h2 {
+  margin: 0;
 }
