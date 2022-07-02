@@ -5,8 +5,7 @@
 npx create-react-app hkzf
 
 # 安装antd-mobile组件库
-yarn add antd-mobile
-版本`2.3.1`
+yarn add antd-mobile-v2
 
 # 安装路由
 yarn add react-router-dom
@@ -17,3 +16,8 @@ yarn add axios
 
 # 安卓sass .scss .sass 导入样式文件
 yarn add node-sass
+
+# 访问斗鱼接口， 跨域问题
+npm install --save-dev http-proxy-middleware
+配置setupProxy.js即可
+

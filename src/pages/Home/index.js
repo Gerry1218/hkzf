@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { TabBar } from "antd-mobile";
+import { TabBar } from "antd-mobile-v2";
 import "./index.css";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
