@@ -87,7 +87,7 @@ export default function Index() {
   function renderSwiper() {
     return data.map((val) => (
       <a
-        key={val.cate_id}
+        key={val}
         href="http://www.alipay.com"
         style={{
           display: "inline-block",
@@ -96,7 +96,7 @@ export default function Index() {
         }}
       >
         <img
-          src={val.avatar}
+          src={val}
           alt=""
           style={{ width: "100%", verticalAlign: "top" }}
           onLoad={() => {
