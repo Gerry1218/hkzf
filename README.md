@@ -14,7 +14,7 @@ yarn add react-router-dom
 # 安装axios
 yarn add axios
 
-# 安卓sass .scss .sass 导入样式文件
+# 安装sass .scss .sass 导入样式文件
 yarn add node-sass
 
 # 访问斗鱼接口， 跨域问题

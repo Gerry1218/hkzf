@@ -1,0 +1,151 @@
+.am-carousel-wrap-dot > span {
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+
+.am-carousel-wrap-dot-active > span {
+  background-color: #1e90ff;
+}
+
+.nav {
+  padding: 10px 0 0 0;
+  background-color: #fff;
+  text-align: center;
+
+  img {
+    width: 30px;
+  }
+
+  h2 {
+    margin: 7px;
+    font-size: 13px;
+    font-weight: normal;
+  }
+}
+
+
+h3 {
+  margin: 5px 0;
+}
+
+// 覆盖原背景色
+.am-grid .am-flexbox {
+  background: inherit;
+  align-items: left;
+
+  .am-flexbox-align-center {
+    align-items: left;
+  }
+
+  .am-flexbox-item {
+    margin-left: 0;
+  }
+  .am-flexbox-item .am-grid-item-content {
+    padding: 5px 0;
+  }
+}
+
+.am-flexbox-align-stretch {
+  margin-bottom: 10px;
+
+  .am-grid-item {
+    background: #fff;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+.container {
+  width: 40%;
+  height: 200px;
+}
+
+.sub {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  /* background-color: #008b57; */
+}
+
+.group {
+  background-color: #f6f5f6;
+  overflow: hidden;
+  padding: 0 10px;
+
+  .group-title {
+    position: relative;
+    margin: 15px 0 15px 0;
+    font-size: 15px;
+  }
+
+  .more {
+    font-size: 14px;
+    font-weight: normal;
+    color: #787d82;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.group-news {
+  
+  .group-title {
+    position: relative;
+    margin: 15px 10px;
+    font-size: 15px;
+  }
+}
+
+.group-item {
+  .desc {
+    padding: 0 8px 0 0;
+  }
+}
+
+.new-items {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  direction: row;
+  margin-bottom: 10px;
+  .imgWrap {
+    width: 60px;
+  }
+  
+
+  .content {
+    width: 100%;
+    padding: 0 10px;
+    .content-info {
+      .gray_title {
+        color: #aaa;
+      }
+    }
+  }
+
+  .test {
+    width: 100%;
+    color: aqua;
+    background-color: #1e90ff;
+  }
+
+  .am-flexbox {
+    align-items: '';
+  }
+
+  .am-flexbox.am-flexbox-align-center {
+    align-items: '';
+  }
+
+  .test1 {
+    width: 100%;
+  }
+
+  .scroll {
+    overflow: 'auto';
+    height: 700px;
+  }
+}

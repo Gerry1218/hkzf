@@ -1,7 +1,7 @@
-import { React, useState } from "react";
+import { React, useState, useRef, useEffect } from "react";
 import { TabBar } from "antd-mobile-v2";
-import "./index.css";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import "./index.scss";
+import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
 
 import News from "../News";
 import Find from "../Find";
@@ -36,6 +36,17 @@ export default function Home() {
   const [selectedTab, setSelectedTab] = useState(initTab);
   const navigate = useNavigate();
 
+  const mounting = useRef(true);
+  useEffect(() => {
+    if (mounting.current) {
+      console.log("初次");
+      mounting.current = false;
+      return;
+    }
+
+    console.log("DidUpdated:");
+  });
+
   function renderTabItems() {
     return tabItems.map((item) => {
       return (
@@ -59,15 +70,15 @@ export default function Home() {
       <div
         style={{
           // backgroundColor: "lightskyblue",
-          padding: 0,
-          height: "100%",
-          width: "100%",
-          top: 0,
-          position: "fixed",
+          // padding: 0,
+          // width: "100%",
+          // top: 0,
+          // position: "fixed",
+          // paddingBottom: 50
         }}
       >
         <Routes>
-          <Route path="index" element={<Index />}></Route>
+          <Route path="index" element={<Index name="gerry"/>}></Route>
           <Route path="find" element={<Find />}></Route>
           <Route path="news" element={<News />}></Route>
           <Route path="my" element={<My></My>}></Route>

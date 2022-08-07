@@ -7,4 +7,12 @@ module.exports = function (app) {
       changeOrigin: true,
     })
   );
+
+  // app.use(
+  //   "/rmsportal",
+  //   createProxyMiddleware({
+  //     target: "https://zos.alipayobjects.com",
+  //     changeOrigin: true,
+  //   })
+  // );
 };
